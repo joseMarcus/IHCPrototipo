@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>e-Bikes</title>
+		<link rel="icon" type="imagem/png" href="/img/logo.png"/>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link href="/index.css" rel="stylesheet"/>
+		
+	</head>
+	
+	<body style="background-color:black" >
+		<header>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bounce" style="background: linear-gradient(90deg, rgb(15, 2, 2), #5558b6)">
+			<div class="container-fluid">	
+			  <a class="navbar-brand hoverable" id="len1" href="/index.html"><img src="/img/logo.png" width="30" height="30" alt=""></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<script> $(function(){
+					var str = '#len1';
+					$(document).ready(function(){
+						var i, stop;
+						i = 1;
+						stop = 4;
+						setInterval(function(){
+						if (i > stop){
+							return;
+						}
+						$('#len' +(i++)).toggleClass('bounce');
+						}, 500)
+					});
+					});</script>
+					<li class="nav-item active">
+					<a class="nav-link hoverable" id="len2" href="/index.html"><i class="fa fa-home fa-fw mr-1"></i>Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link hoverable" id="len3" href="/menu/empresa.html"><i class="fa fa-building fa-fw mr-1"></i>Empresa</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link hoverable" id="len4" href="/menu/produtos.html"><i class="fa fa-th-list fa-fw mr-1"></i>Produtos</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link hoverable" id="len5" href="/menu/contatos.html"><i class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i>Contatos</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link hoverable" id="len6"  href="/menu/cadastro.html"><i class="fa fa-user-plus fa-fw mr-1"></i>Cadastro</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav><br>
+	  
+
+		
+	  
+	  
+	 
+	</header>
+
+	<main>
+		<div class="row my-5 align-items-center justify-content-center">
+			<div class=" d-flex flex-column flex-lg-row justify-content-center">
+			  <div class="mt-sm-2 mt-lg-0 card mx-2" style="width: 50rem;">
+				<div id="carouselExampleIndicators" class = "carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+					  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">	
+					  <div class="carousel-item active">
+						<img class="d-block w-100 h-100" src="/img/bike1.png" alt="First slide">
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 h-100" src="/img/bike1.1.png" alt="Second slide">
+						
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 h-100" src="/img/bike1.2.png" alt="Third slide">
+						
+					  </div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				  </div>
+			  </div>
+			
+			
+		
+
+			<div class="mt-sm-2 mt-lg-0 card mx-2" style="width: 25rem;">
+				
+			<div class="card-body d-flex flex-column" >
+			  <h5 class="card-title">
+				<h1>Bicicleta CALOI Atacama F
+					<a class="btn btn-primary bg-danger" onclick="acrescentar3()">
+
+					<i class="far fa-heart"></i>
+					<span class=" badge badge-danger"  id="carrinhoIndex3"></span>
+	
+				  </a></h1>
+				<script>
+					var count3 = 0;
+					
+					function acrescentar3() { 
+					  count3++;
+					  carrinhoIndex3.innerHTML = count3
+					}</script>
+				  
+				<p class="card-text">Tipo: Mountain Bike</p>
+
+				<tr><br>
+					<td>COR</td><br><br>
+					<td>
+						<select class="form-control">
+							<option value="vermelha">Vermelha</option>
+							<option value="preta">Preta</option>
+							<option value="azul">Azul</option>
+						  </select>						
+					</td>
+				</tr>
+				<tr><br>
+					<td>TAMANHO</td><br><br>
+					<td>
+						<select class="form-control">
+							<option value="p15">P 15</option>
+							<option value="m17">M 17</option>
+							<option value="g19">G 19</option>
+
+
+						  </select>						
+					</td>
+				</tr>
+			  </h5>
+			  <h5 class="card-title"><br>
+				<a  class= " bg-success"><h1>R$ 3.999,99</h1></a>
+				<p>à vista ou no cartão de crédito</p>
+
+				<div class="mt-sm-2 mt-lg-0 card mx-2">
+				
+
+		<a href="/pgmt/p1.html" class= "btn btn-primary bg-danger"><h1>COMPRAR</h1></a>
+			</div>
+		</div>
+		  </div></div></div>
+
+	</div>
+		<div class="container">
+	<div class=" row align-items-center justify-content-center text-white">
+		<h1>ESPECIFICAÇÕES</h1>
+		<div class="col my-5 p-5">
+			<h4>Quadro</h4>
+		<p>Quadro de alumínio 6061 tratado, conformado, com suporte de freio a disco standard e gancheira removível.</p>
+		<h4>Material Quadro</h4>
+		<p>Alumínio</p>
+		<h4>Tamanho do Quadro</h4>
+		<p>15/17/19/21</p>
+		<h4>Garfo</h4>
+		<p>Suspensão Caloi com 100mm de curso e trava remota</p>
+		<h4>Aros</h4>
+		<p>Rodi Blackrock 29 ou Stan's Notubes Arch</p>
+		<h4>Cubos</h4>
+		<p>Shimano TX505 ou Shunfeng SFA217 com Quick Release</p>
+		<h4>Raios</h4>
+		<p>Inox</p>
+		<h4>Pneu</h4>
+		<p>MTB - 29X2.10</p>
+		<h4>Pedal</h4>
+		<p>Plástico</p>
+		<h4>Pedivela</h4>
+		<p>Shimano Alivio ou Shimano Altus - 175mm (GG, G, M), 170mm (P) ou FSA CK-758STT - 175mm – 40-30-22D</p>
+		<h4>Movimento Central</h4>
+		<p>Shimano Integrado ou Feimin B908</p>
+		<h4>Corrente</h4>
+		<p>KMC X9</p>
+		<h4>Cassete</h4>
+		<p>Sunrace - 9v - 11-36D</p>
+		<h4>Câmbio traseiro</h4> 
+		<p>Shimano Altus ou Microshift Mezzo, RD-M36L – 9v</p>
+		<h4>Câmbio dianteiro</h4>
+		<p>Shimano Alivio ou Shimano Altus ou Microshift FD-M43 – 3v</p>
+		<h4>Passadores</h4>
+		<p>Shimano Alivio ou Shimano Altus ou Microshift TS38-9 - 3x9v</p>
+		<h4>Guidão </h4>
+		<p>MTB Alumínio 31.8x720mm</p>
+		<h4>Suporte de guidão</h4> 
+		<p>MTB Alumínio - 90mm (GG, G), 75mm (M), 60mm (P) - 7°</p>
+		<h4>Manoplas </h4>
+		<p>Borracha</p>
+		<h4>Movimento de direção</h4> 
+		<p>Semi integrado</p>
+		<h4>Freios </h4>
+		<p>Shimano ou Logan – Hidráulico</p>
+		<h4>Manete de freios</h4>
+		<p>Shimano MT200 ou Logan HDM500</p>
+		<h4>Selim</h4> 
+		<p>Selle Royal</p>
+		<h4>Canote do selim</h4> 
+		<p>Alumínio - 27.2x400 mm - Ajuste com quick release</p>
+		<h4>Posição do ciclista</h4> 
+		<p>Estável (semi-inclinada)</p>
+		</div>
+	</div>
+</div>
+  
+</div>
+	</main>
+	
+	
+		<footer>
+			<div class="text-white">
+				<h5>Designed & Developer JWR</h5>
+			 <p>Copyright &copy; 2022 | All Rights Reserved</p>
+		  </div>
+		</footer>
+
+	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+	  
+    
+
+</body>
+
+</html>
